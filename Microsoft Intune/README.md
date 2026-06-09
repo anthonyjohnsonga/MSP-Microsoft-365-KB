@@ -13,3 +13,9 @@ A reference guide covering the Properties Catalog feature in Microsoft Intune �
 ### [Microsoft Windows 11 Hotpatch Notes](./Microsoft%20Windows%2011%20Hotpatch%20Notes.md)
 
 Reference notes covering Windows 11 Hotpatch — a feature that applies quality updates in-memory without requiring a reboot. Explains the baseline vs hotpatch update schedule (4 reboot months, 8 rebootless months per year), device prerequisites (Windows 11 24H2, VBS, HVCI), and the two Intune policies required to enable it: a Settings Catalog policy for Virtualization Based Security and a Windows Quality Update policy via Windows Update for Business.
+
+---
+
+### [Microsoft Intune Google Chrome Disable Password Manager](./Microsoft%20Intune%20Google%20Chrome%20Disable%20Password%20Manager.md)
+
+Step-by-step guide for deploying a Settings Catalog policy that disables Google Chrome's built-in password manager via Intune. Covers policy details, configuration steps, and notes on behavior — including that existing saved passwords are not deleted, Chrome Sync is unaffected, and the policy maps to the `PasswordManagerEnabled` Chrome GPO setting.
