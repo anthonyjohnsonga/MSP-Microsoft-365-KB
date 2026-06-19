@@ -17,3 +17,7 @@
 > This is a living document. If you use something here and find it wrong, fix it. If you solve something not covered here, add it. The value of a knowledge base is not in who writes it — it's in whether the next person finds what they need.
 >
 > *The ticket will always come back. Be ready.*
+
+---
+
+*New here? See [CONTRIBUTING.md](./CONTRIBUTING.md) for how this KB is organized and how to add to it. Start a new article from the [article template](./_templates/article-template.md).*
