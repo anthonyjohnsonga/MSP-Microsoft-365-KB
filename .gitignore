@@ -1,0 +1,5 @@
+# Local-only staging area for new files before they're sorted into the correct folder
+_temp/
+
+# Local Claude Code config (not part of the KB)
+.claude/
