@@ -53,4 +53,6 @@ On a user's account in the Microsoft 365 admin center, a group-inherited license
 
 ---
 
+**Next:** [Part 2 - Microsoft Entra Device Settings](./Part%202%20-%20Microsoft%20Entra%20Device%20Settings.md) →
+
 *[Intune Zero to Hero](./README.md) series · [Microsoft Intune](../README.md) · [Root index](../../README.md)*
