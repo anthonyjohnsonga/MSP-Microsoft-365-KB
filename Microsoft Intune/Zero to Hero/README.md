@@ -6,9 +6,9 @@ A start-to-finish guide for standing up and operating Microsoft Intune for Windo
 
 ## Parts
 
-> _Table of contents — populated as parts are added. Read top to bottom for the full process._
+> _Read top to bottom for the full process, or jump to any part as a standalone reference._
 
-<!-- Part links will be listed here in order as source files are added. -->
+1. [Part 1 - Group-Based Licensing](./Part%201%20-%20Licensing.md) — Assign Business Premium (or any license) to an Entra security group so membership drives licensing; includes the group naming convention.
 
 ---
 
