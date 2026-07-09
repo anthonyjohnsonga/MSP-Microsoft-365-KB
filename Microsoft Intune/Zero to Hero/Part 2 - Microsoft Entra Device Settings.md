@@ -88,13 +88,13 @@ By default, users can self-service retrieve the BitLocker recovery key(s) for de
 
 ## Notes
 
-- **MFA at join:** Microsoft recommends enforcing MFA for device registration via a Conditional Access policy (the "Register or join devices" user action) rather than the **Require MFA** toggle. If you adopt that CA policy, set the toggle back to **No** to avoid double enforcement.
+- **MFA at join:** Microsoft recommends enforcing MFA for device registration via a Conditional Access policy (the "Register or join devices" user action) rather than the **Require MFA** toggle. If you adopt that CA policy, set the toggle back to **No** to avoid double enforcement. [Part 2a](./Part%202a%20-%20CA%20Device%20Registration.md) walks through building that policy.
 - **BitLocker restriction trade-off:** Microsoft's baseline setup tutorial leaves this at **No**; **Yes** is the more secure choice but shifts recovery-key retrieval to the helpdesk. Make sure your helpdesk process is ready before enabling.
 - **LAPS is two parts:** the tenant toggle here plus a client-side Intune Account protection policy. Neither works without the other.
 - **Local admin exposure:** adding the registering user as a local admin is convenient but grants standard users admin rights on their own devices — revisit this against your security baseline.
 
 ---
 
-← **Previous:** [Part 1 - Group-Based Licensing](./Part%201%20-%20Licensing.md)
+← **Previous:** [Part 1 - Group-Based Licensing](./Part%201%20-%20Licensing.md) · **Next:** [Part 2a - Conditional Access for Device Registration](./Part%202a%20-%20CA%20Device%20Registration.md) →
 
 *[Intune Zero to Hero](./README.md) series · [Microsoft Intune](../README.md) · [Root index](../../README.md)*
