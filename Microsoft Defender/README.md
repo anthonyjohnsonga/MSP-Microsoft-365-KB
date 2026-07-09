@@ -13,3 +13,9 @@ An MSP reference guide explaining the difference between Microsoft Defender Smar
 ### [Microsoft 365 Display Name Spoofing Guide](./Microsoft%20365%20Display%20Name%20Spoofing%20Guide.md)
 
 A layered defense guide for protecting Microsoft 365 Business Premium tenants against display name spoofing — a phishing technique where attackers impersonate internal staff using matching display names from external domains. Covers 5 defense layers: email authentication (SPF/DKIM/DMARC), external sender callouts in EAC, anti-phishing user impersonation protection in Defender for Office 365 P1, mail flow rules targeting executive display names, and user awareness training via Attack Simulator. Includes an implementation checklist with priority and user impact ratings, and monitoring guidance for quarantine review, spoof intelligence, and DMARC reporting.
+
+---
+
+### [Microsoft 365 DMARC Rollout Guide](./Microsoft%20365%20DMARC%20Rollout%20Guide.md)
+
+A phased rollout guide for moving a domain's DMARC policy from monitoring (`p=none`) through `p=quarantine` to full enforcement (`p=reject`) without breaking legitimate mail flow. Explains DMARC alignment (SPF/DKIM, relaxed vs. strict), the `pct=` staged-enforcement tag and its common misunderstandings, and a phase-by-phase timeline with exit criteria for each stage. Includes a pre-change checklist and sender inventory, fixes for common alignment failures (third-party vendors, website forms, copiers, forwarding, SPF lookup limits), subdomain and non-sending-domain strategy, Microsoft 365-specific behavior (DKIM enablement, high-risk delivery pool, no forensic reports), a change control template with rollback plan, DNS testing commands, customer-facing language, and an MSP decision matrix.
