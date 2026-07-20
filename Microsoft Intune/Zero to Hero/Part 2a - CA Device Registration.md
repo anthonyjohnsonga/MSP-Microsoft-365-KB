@@ -52,6 +52,6 @@ Once this policy is enabled, the Part 2 toggle should be set back to **No** so M
 
 ---
 
-← **Previous:** [Part 2 - Microsoft Entra Device Settings](./Part%202%20-%20Microsoft%20Entra%20Device%20Settings.md) · **Next:** [Part 3 - Intune Enrollment Configuration](./Intune_Enrollment_Configuration_Guide.md) →
+← **Previous:** [Part 2 - Microsoft Entra Device Settings](./Part%202%20-%20Microsoft%20Entra%20Device%20Settings.md) · **Next:** [Part 3 - Intune Enrollment Configuration](./Part%203%20-%20Intune%20Enrollment%20Configuration.md) →
 
 *[Intune Zero to Hero](./README.md) series · [Microsoft Intune](../README.md) · [Root index](../../README.md)*
