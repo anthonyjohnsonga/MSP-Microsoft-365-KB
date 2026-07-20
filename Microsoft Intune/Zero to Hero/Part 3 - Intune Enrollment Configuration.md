@@ -98,6 +98,6 @@ If the tenant uses multiple UPN suffixes, an additional `EnterpriseEnrollment` C
 
 ---
 
-← **Previous:** [Part 2a - Conditional Access for Device Registration](./Part%202a%20-%20CA%20Device%20Registration.md)
+← **Previous:** [Part 2a - Conditional Access for Device Registration](./Part%202a%20-%20CA%20Device%20Registration.md) · **Next:** [Part 4 - Windows Diagnostic Data](./Part%204%20-%20Windows%20Diagnostic%20Data.md) →
 
 *[Intune Zero to Hero](./README.md) series · [Microsoft Intune](../README.md) · [Root index](../../README.md)*

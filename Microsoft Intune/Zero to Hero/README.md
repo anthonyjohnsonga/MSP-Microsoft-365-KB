@@ -12,6 +12,7 @@ A start-to-finish guide for standing up and operating Microsoft Intune for Windo
 2. [Part 2 - Microsoft Entra Device Settings](./Part%202%20-%20Microsoft%20Entra%20Device%20Settings.md) — Tenant-wide Entra device settings: join/registration scope, MFA at join, device cap, local admin behavior, LAPS, and BitLocker key recovery — each setting explained.
 3. [Part 2a - Conditional Access for Device Registration](./Part%202a%20-%20CA%20Device%20Registration.md) — Continuation of Part 2: enforce MFA at device join/registration with a Conditional Access policy (Register or join devices user action) instead of the tenant toggle.
 4. [Part 3 - Intune Enrollment Configuration](./Part%203%20-%20Intune%20Enrollment%20Configuration.md) — Windows enrollment setup in Intune: device limit and platform restrictions, automatic enrollment (MDM/MAM user scope), the tenant-wide Windows Hello for Business default, and CNAME validation.
+5. [Part 4 - Windows Diagnostic Data](./Part%204%20-%20Windows%20Diagnostic%20Data.md) — Enable the tenant-level Windows diagnostic data toggle that unlocks Intune's update compatibility reports and failure alerts; covers the license verification attestation and where the data surfaces.
 
 ---
 
