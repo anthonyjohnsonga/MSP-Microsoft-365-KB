@@ -13,6 +13,7 @@ A start-to-finish guide for standing up and operating Microsoft Intune for Windo
 3. [Part 2a - Conditional Access for Device Registration](./Part%202a%20-%20CA%20Device%20Registration.md) — Continuation of Part 2: enforce MFA at device join/registration with a Conditional Access policy (Register or join devices user action) instead of the tenant toggle.
 4. [Part 3 - Intune Enrollment Configuration](./Part%203%20-%20Intune%20Enrollment%20Configuration.md) — Windows enrollment setup in Intune: device limit and platform restrictions, automatic enrollment (MDM/MAM user scope), the tenant-wide Windows Hello for Business default, and CNAME validation.
 5. [Part 4 - Windows Diagnostic Data](./Part%204%20-%20Windows%20Diagnostic%20Data.md) — Enable the tenant-level Windows diagnostic data toggle that unlocks Intune's update compatibility reports and failure alerts; covers the license verification attestation and where the data surfaces.
+6. [Part 5 - Defender for Endpoint Connector](./Part%205%20-%20Defender%20for%20Endpoint%20Connector.md) — Establish the Defender–Intune service-to-service connection via the Defender for Business setup wizard, enable the compliance policy evaluation toggle, and verify the connector status; includes the manual path for Defender for Endpoint Plan 1/2 tenants.
 
 ---
 

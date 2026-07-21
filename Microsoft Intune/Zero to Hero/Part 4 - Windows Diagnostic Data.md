@@ -72,6 +72,6 @@ The diagnostic data itself doesn't just get switched on and disappear into a bla
 
 ---
 
-← **Previous:** [Part 3 - Intune Enrollment Configuration](./Part%203%20-%20Intune%20Enrollment%20Configuration.md)
+← **Previous:** [Part 3 - Intune Enrollment Configuration](./Part%203%20-%20Intune%20Enrollment%20Configuration.md) · **Next:** [Part 5 - Defender for Endpoint Connector](./Part%205%20-%20Defender%20for%20Endpoint%20Connector.md) →
 
 *[Intune Zero to Hero](./README.md) series · [Microsoft Intune](../README.md) · [Root index](../../README.md)*
