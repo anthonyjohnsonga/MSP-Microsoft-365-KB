@@ -19,3 +19,9 @@ A reference guide for setting up the four core security groups used in a Conditi
 ### [Microsoft SSPR Deployment Guide](./Microsoft%20SSPR%20Deployment%20Guide.md)
 
 A deployment guide for Self-Service Password Reset (SSPR) covering both cloud-only Entra ID tenants and hybrid tenants synced via Microsoft Entra Cloud Sync. Current as of June 2026 (post legacy MFA/SSPR policy deprecation). Walks through licensing prerequisites, checking the legacy-to-unified authentication methods migration state, enabling SSPR and required auth methods, and — for hybrid clients — enabling Cloud Sync password writeback (agent permissions, Entra-side activation, on-prem GPO, and the writeback gaps that cause on-prem/cloud password drift). Closes with securing the registration process via Conditional Access and a full testing checklist.
+
+---
+
+### [Entra ID Device Tenant-to-Tenant Migration Runbook](./Microsoft%20Entra%20Device%20Tenant%20Migration%20Runbook.md)
+
+A step-by-step runbook for moving a single Entra ID (Azure AD) joined Windows device from one tenant to another so it lands under the destination tenant's Intune management. Covers the clean-removal-first sequence on the source tenant (Intune Retire, deleting the stale device object, checking CA/Compliance dependencies), leaving the join cleanly on the machine with `dsregcmd /leave` and verifying via `dsregcmd /status`, joining and auto-enrolling into the destination tenant, deregistering the device from Autopilot to prevent old-tenant re-provisioning, and handling user profile/OneDrive data. Includes a verification checklist and the extra safeguard needed for hybrid (on-prem AD-joined) devices.
