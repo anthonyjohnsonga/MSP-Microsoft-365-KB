@@ -8,7 +8,7 @@ tags:
   - MicrosoftEntra
 ---
 
-See [[Microsoft Conditional Access]] for reference
+See Microsoft Conditional Access for reference
 
 **CA - Staff (Security Group)**
 Create a Microsoft Security group in Entra. 
