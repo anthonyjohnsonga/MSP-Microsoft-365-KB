@@ -591,6 +591,6 @@ Save the `GET` response for `authenticationmethodspolicy` to a `.txt` file and c
 
 ## Related notes
 
-- [[M365 Security Standards - Manual Configuration Guide]]
-- [[Entra ID - Dynamic Security Groups for License Assignment]]
-- [[M365 Business Premium - Email Security Hardening]]
+- M365 Security Standards - Manual Configuration Guide
+- Entra ID - Dynamic Security Groups for License Assignment
+- M365 Business Premium - Email Security Hardening
