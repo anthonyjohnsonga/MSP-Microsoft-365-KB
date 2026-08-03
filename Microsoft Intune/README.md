@@ -25,3 +25,9 @@ Step-by-step guide for deploying a Settings Catalog policy that disables Google 
 ### [Microsoft Intune Enrollment and Credential Service Principal Check](./Microsoft%20Intune%20Enrollment%20and%20Credential%20Service%20Principal%20Check.md)
 
 Reference for confirming whether the **Microsoft Intune Enrollment** (`d4ebce55-…`) and **Azure Credential Configuration Endpoint Service** (`ea890292-…`) first-party service principals exist in a tenant, what each does, and how to create them with Graph PowerShell (`New-MgServicePrincipal`) if missing. Both are commonly absent by default and only matter once referenced in a Conditional Access policy — enrollment/PRT acquisition under broad MFA, and passkey (FIDO2) registration respectively. Includes Graph REST equivalents, an Entra admin center manual check, and current CIS-aligned guidance on *not* broadly excluding the enrollment app.
+
+---
+
+### [Sysprep for Autopilot Single-Machine Deployment](./Microsoft%20Intune%20Sysprep%20for%20Autopilot%20Single-Machine%20Deployment.md)
+
+Bench workflow for preparing one physical machine — pre-loaded with tools and Office, registered in Autopilot — to ship to a single end user. Separates Sysprep's two independent jobs (`/oobe` reset vs `/generalize`) and explains why single-machine deployment only needs the former, which eliminates nearly every common Sysprep failure. Covers the full switch table, building in Audit mode as the cleaner path, hardware hash capture with `Get-WindowsAutopilotInfo` (plus two no-script alternatives), verifying the Autopilot profile reads **Assigned** before shipping, BitLocker recovery-key escrow behaviour by device state, the `/generalize`-only error catalogue (`0x80310039`, `0x80073CF2`, the 1001-run limit), log locations, and why Autopilot pre-provisioning is the better long-term answer.
