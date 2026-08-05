@@ -1,0 +1,68 @@
+name: Update README badges
+
+# Recounts the Article Index table and rewrites the article/product-area
+# badge numbers in README.md so they never drift from the actual content.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-badges
+  cancel-in-progress: false
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Count articles and product areas
+        id: counts
+        run: |
+          set -euo pipefail
+
+          # Index rows are the only lines whose first cell is bold: | **Area** | ...
+          articles=$(grep -cE '^\|[[:space:]]*\*\*' README.md)
+
+          # Distinct bold values in the first cell = product areas.
+          areas=$(grep -oE '^\|[[:space:]]*\*\*[^*]+\*\*' README.md \
+            | sed -E 's/^\|[[:space:]]*\*\*//; s/\*\*$//' \
+            | sort -u | wc -l)
+
+          if [ "$articles" -eq 0 ] || [ "$areas" -eq 0 ]; then
+            echo "::error::Parsed 0 articles or 0 areas — the Article Index table format changed."
+            exit 1
+          fi
+
+          echo "articles=$articles" >> "$GITHUB_OUTPUT"
+          echo "areas=$areas" >> "$GITHUB_OUTPUT"
+          echo "Found $articles articles across $areas product areas."
+
+      - name: Rewrite badge values
+        run: |
+          set -euo pipefail
+          sed -i -E \
+            -e 's|badge/articles-[0-9]+-|badge/articles-${{ steps.counts.outputs.articles }}-|' \
+            -e 's|badge/product%20areas-[0-9]+-|badge/product%20areas-${{ steps.counts.outputs.areas }}-|' \
+            README.md
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- README.md; then
+            echo "Badges already up to date."
+            exit 0
+          fi
+          git config user.name  'anthonyjohnsonga'
+          git config user.email 'anthony@johnson2.us'
+          git add README.md
+          git commit -m 'Update README badge counts [skip ci]'
+          git push

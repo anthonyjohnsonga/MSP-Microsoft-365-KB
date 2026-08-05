@@ -1,5 +1,11 @@
 # MSP Microsoft 365 Knowledge Base
 
+[![Articles](https://img.shields.io/badge/articles-24-0078D4?style=flat-square)](#-article-index)
+[![Product Areas](https://img.shields.io/badge/product%20areas-10-5B2D90?style=flat-square)](#-article-index)
+[![Last Commit](https://img.shields.io/github/last-commit/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=00A4EF)](https://github.com/anthonyjohnsonga/MSP-Microsoft-365-KB/commits/main)
+[![License: MIT](https://img.shields.io/github/license/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=green)](./LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](./CONTRIBUTING.md)
+
 > *In the beginning, there was a ticket.*
 >
 > A user could not send email. The helpdesk technician searched, and found nothing written down. So they searched again — this time through memory, through tribal knowledge whispered across Teams chats and half-remembered Teams calls. Eventually, they found the answer. They fixed the ticket. And then... they moved on.
