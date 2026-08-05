@@ -83,8 +83,9 @@ jobs:
           if gh pr view "$BRANCH" --json state --jq '.state' 2>/dev/null | grep -q OPEN; then
             echo "Existing PR updated."
           else
-            body=$(printf '%s\n\n%s\n' \
+            body=$(printf '%s\n\n%s\n\n%s\n' \
               "The Article Index now lists **${ARTICLES} articles** across **${AREAS} product areas**. This updates the README badges to match." \
+              'Merge with a **merge commit** — squashing rewrites the commit author to `github-actions[bot]`, while the commit on this branch is authored `anthonyjohnsonga`.' \
               'Opened automatically by the `Update README badges` workflow.')
             gh pr create \
               --base main \
