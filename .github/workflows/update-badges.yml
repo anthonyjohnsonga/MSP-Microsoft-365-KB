@@ -83,11 +83,12 @@ jobs:
           if gh pr view "$BRANCH" --json state --jq '.state' 2>/dev/null | grep -q OPEN; then
             echo "Existing PR updated."
           else
+            body=$(printf '%s\n\n%s\n' \
+              "The Article Index now lists **${ARTICLES} articles** across **${AREAS} product areas**. This updates the README badges to match." \
+              'Opened automatically by the `Update README badges` workflow.')
             gh pr create \
               --base main \
               --head "$BRANCH" \
               --title 'Update README badge counts' \
-              --body "The Article Index now lists **${ARTICLES} articles** across **${AREAS} product areas**. This updates the README badges to match.
-
-Opened automatically by the \`Update README badges\` workflow."
+              --body "$body"
           fi
