@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: update-badges
@@ -54,15 +55,39 @@ jobs:
             -e 's|badge/product%20areas-[0-9]+-|badge/product%20areas-${{ steps.counts.outputs.areas }}-|' \
             README.md
 
-      - name: Commit if changed
+      - name: Open pull request if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: chore/update-badge-counts
+          ARTICLES: ${{ steps.counts.outputs.articles }}
+          AREAS: ${{ steps.counts.outputs.areas }}
         run: |
           set -euo pipefail
+
           if git diff --quiet -- README.md; then
             echo "Badges already up to date."
+            # Nothing left to propose — retire any PR still open from an earlier run.
+            gh pr close "$BRANCH" --delete-branch --comment 'Badge counts are current on main.' 2>/dev/null || true
             exit 0
           fi
+
           git config user.name  'anthonyjohnsonga'
           git config user.email 'anthony@johnson2.us'
+          git switch -c "$BRANCH"
           git add README.md
-          git commit -m 'Update README badge counts [skip ci]'
-          git push
+          git commit -m "Update README badge counts to ${ARTICLES} articles / ${AREAS} areas"
+
+          # Force-push so a still-open PR from a previous run just picks up the new numbers.
+          git push --force origin "$BRANCH"
+
+          if gh pr view "$BRANCH" --json state --jq '.state' 2>/dev/null | grep -q OPEN; then
+            echo "Existing PR updated."
+          else
+            gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title 'Update README badge counts' \
+              --body "The Article Index now lists **${ARTICLES} articles** across **${AREAS} product areas**. This updates the README badges to match.
+
+Opened automatically by the \`Update README badges\` workflow."
+          fi
