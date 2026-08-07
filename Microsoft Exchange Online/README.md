@@ -13,3 +13,9 @@ A comprehensive reference guide covering the full scope of day-to-day Exchange O
 ### [Microsoft Exchange Online Mailbox Archiving](./Microsoft%20Exchange%20Online%20Mailbox%20Archiving.md)
 
 A focused deep-dive into Exchange Online mailbox archiving, covering archive types (Online Archive and Auto-Expanding Archive), how to enable or disable archives for user and shared mailboxes via the EAC and PowerShell, storage limits by license, retention policies and the Managed Folder Assistant, retention hold vs. litigation hold, PST bulk import, and how users access their archive in Outlook Desktop, OWA, and mobile. Also includes a dedicated section on managing the archive programmatically via the Microsoft Graph API, with PowerShell examples for connecting to Graph, retrieving archive folder IDs, listing messages, and permanently deleting items.
+
+---
+
+### [Microsoft Exchange Online Email Encryption Setup Guide](./Microsoft%20Exchange%20Online%20Email%20Encryption%20Setup%20Guide.md)
+
+A step-by-step build and troubleshooting guide for Microsoft Purview Message Encryption in a cloud-only tenant. Covers installing the `AIPService` and `ExchangeOnlineManagement` modules under Windows PowerShell 5.1, activating Azure Rights Management, enabling the Exchange Online IRM settings (`AzureRMSLicensingEnabled`, internal/external licensing, simplified client access), and validating with `Get-RMSTemplate` and `Test-IRMConfiguration`. Includes a detailed fix for the common "Failed to acquire RMS templates" failure by populating `LicensingLocation` from the tenant's RMS licensing URL, guidance on Microsoft 365 propagation delays, verifying published Azure RMS templates and per-user RMS service plans, an Outlook on the web functional test, and a symptom-to-cause troubleshooting table.
