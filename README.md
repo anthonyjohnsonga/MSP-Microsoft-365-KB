@@ -1,6 +1,6 @@
 # MSP Microsoft 365 Knowledge Base
 
-[![Articles](https://img.shields.io/badge/articles-25-0078D4?style=flat-square)](#-article-index)
+[![Articles](https://img.shields.io/badge/articles-26-0078D4?style=flat-square)](#-article-index)
 [![Product Areas](https://img.shields.io/badge/product%20areas-11-5B2D90?style=flat-square)](#-article-index)
 [![Last Commit](https://img.shields.io/github/last-commit/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=00A4EF)](https://github.com/anthonyjohnsonga/MSP-Microsoft-365-KB/commits/main)
 [![License: MIT](https://img.shields.io/github/license/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=green)](./LICENSE)
