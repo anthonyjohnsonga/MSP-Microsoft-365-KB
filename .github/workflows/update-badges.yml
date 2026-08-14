@@ -2,6 +2,8 @@ name: Update README badges
 
 # Recounts the Article Index table and rewrites the article/product-area
 # badge numbers in README.md so they never drift from the actual content.
+# The fix is committed straight to main — an earlier PR-based version could only
+# propose the change, and badges sat stale for six days when nobody merged it.
 
 on:
   push:
@@ -12,7 +14,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: update-badges
@@ -25,71 +26,59 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Count articles and product areas
-        id: counts
+      - name: Recount and push badge values
         run: |
           set -euo pipefail
-
-          # Index rows are the only lines whose first cell is bold: | **Area** | ...
-          articles=$(grep -cE '^\|[[:space:]]*\*\*' README.md)
-
-          # Distinct bold values in the first cell = product areas.
-          areas=$(grep -oE '^\|[[:space:]]*\*\*[^*]+\*\*' README.md \
-            | sed -E 's/^\|[[:space:]]*\*\*//; s/\*\*$//' \
-            | sort -u | wc -l)
-
-          if [ "$articles" -eq 0 ] || [ "$areas" -eq 0 ]; then
-            echo "::error::Parsed 0 articles or 0 areas — the Article Index table format changed."
-            exit 1
-          fi
-
-          echo "articles=$articles" >> "$GITHUB_OUTPUT"
-          echo "areas=$areas" >> "$GITHUB_OUTPUT"
-          echo "Found $articles articles across $areas product areas."
-
-      - name: Rewrite badge values
-        run: |
-          set -euo pipefail
-          sed -i -E \
-            -e 's|badge/articles-[0-9]+-|badge/articles-${{ steps.counts.outputs.articles }}-|' \
-            -e 's|badge/product%20areas-[0-9]+-|badge/product%20areas-${{ steps.counts.outputs.areas }}-|' \
-            README.md
-
-      - name: Open pull request if changed
-        env:
-          GH_TOKEN: ${{ github.token }}
-          BRANCH: chore/update-badge-counts
-          ARTICLES: ${{ steps.counts.outputs.articles }}
-          AREAS: ${{ steps.counts.outputs.areas }}
-        run: |
-          set -euo pipefail
-
-          if git diff --quiet -- README.md; then
-            echo "Badges already up to date."
-            # Nothing left to propose — retire any PR still open from an earlier run.
-            gh pr close "$BRANCH" --delete-branch --comment 'Badge counts are current on main.' 2>/dev/null || true
-            exit 0
-          fi
 
           git config user.name  'anthonyjohnsonga'
           git config user.email 'anthony@johnson2.us'
-          git switch -c "$BRANCH"
-          git add README.md
-          git commit -m "Update README badge counts to ${ARTICLES} articles / ${AREAS} areas"
 
-          # Force-push so a still-open PR from a previous run just picks up the new numbers.
-          git push --force origin "$BRANCH"
+          # Recount the index and rewrite the badges against whatever README.md
+          # is currently checked out. Sets $articles / $areas for the commit message.
+          recount_and_rewrite() {
+            # Index rows are the only lines whose first cell is bold: | **Area** | ...
+            articles=$(grep -cE '^\|[[:space:]]*\*\*' README.md)
 
-          if gh pr view "$BRANCH" --json state --jq '.state' 2>/dev/null | grep -q OPEN; then
-            echo "Existing PR updated."
-          else
-            body=$(printf '%s\n\n%s\n\n%s\n' \
-              "The Article Index now lists **${ARTICLES} articles** across **${AREAS} product areas**. This updates the README badges to match." \
-              'Merge with a **merge commit** — squashing rewrites the commit author to `github-actions[bot]`, while the commit on this branch is authored `anthonyjohnsonga`.' \
-              'Opened automatically by the `Update README badges` workflow.')
-            gh pr create \
-              --base main \
-              --head "$BRANCH" \
-              --title 'Update README badge counts' \
-              --body "$body"
-          fi
+            # Distinct bold values in the first cell = product areas.
+            areas=$(grep -oE '^\|[[:space:]]*\*\*[^*]+\*\*' README.md \
+              | sed -E 's/^\|[[:space:]]*\*\*//; s/\*\*$//' \
+              | sort -u | wc -l)
+
+            if [ "$articles" -eq 0 ] || [ "$areas" -eq 0 ]; then
+              echo "::error::Parsed 0 articles or 0 areas — the Article Index table format changed."
+              exit 1
+            fi
+
+            echo "Found $articles articles across $areas product areas."
+
+            sed -i -E \
+              -e "s|badge/articles-[0-9]+-|badge/articles-${articles}-|" \
+              -e "s|badge/product%20areas-[0-9]+-|badge/product%20areas-${areas}-|" \
+              README.md
+          }
+
+          # Two attempts: if a push lands between checkout and push, reset onto it and
+          # recount against the new content rather than clobbering it with stale numbers.
+          for attempt in 1 2; do
+            recount_and_rewrite
+
+            if git diff --quiet -- README.md; then
+              echo "Badges already up to date."
+              exit 0
+            fi
+
+            git add README.md
+            git commit -m "Update README badge counts to ${articles} articles / ${areas} areas"
+
+            if git push origin HEAD:main; then
+              echo "Badges updated on main: ${articles} articles / ${areas} areas."
+              exit 0
+            fi
+
+            echo "Push rejected — main moved. Resetting onto it and recounting."
+            git fetch origin main
+            git reset --hard origin/main
+          done
+
+          echo "::error::Could not push the badge update — main kept moving underneath this run."
+          exit 1

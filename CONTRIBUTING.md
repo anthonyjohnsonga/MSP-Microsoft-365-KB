@@ -31,7 +31,10 @@ This is a living, MSP-focused knowledge base. Every article is written for a **h
 2. Start from [`_templates/article-template.md`](./_templates/article-template.md).
 3. Move the finished file into the correct product folder.
 4. **Update that folder's `README.md`** — add a `### [Title](./file.md)` entry with a summary paragraph, matching the existing entries.
-5. Commit and push (see below).
+5. Add a row to the **Article Index** table in the root [`README.md`](./README.md).
+6. Commit and push (see below).
+
+**Don't hand-edit the article/product-area badges** at the top of the README. The `Update README badges` workflow recounts the Article Index on every push to `README.md` and commits the correct numbers straight to `main`.
 
 ---
 
