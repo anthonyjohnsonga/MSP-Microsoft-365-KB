@@ -1,7 +1,7 @@
 # MSP Microsoft 365 Knowledge Base
 
-[![Articles](https://img.shields.io/badge/articles-25-0078D4?style=flat-square)](#-article-index)
-[![Product Areas](https://img.shields.io/badge/product%20areas-11-5B2D90?style=flat-square)](#-article-index)
+[![Articles](https://img.shields.io/badge/articles-27-0078D4?style=flat-square)](#-article-index)
+[![Product Areas](https://img.shields.io/badge/product%20areas-12-5B2D90?style=flat-square)](#-article-index)
 [![Last Commit](https://img.shields.io/github/last-commit/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=00A4EF)](https://github.com/anthonyjohnsonga/MSP-Microsoft-365-KB/commits/main)
 [![License: MIT](https://img.shields.io/github/license/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=green)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](./CONTRIBUTING.md)
@@ -33,6 +33,7 @@ Every guide and script in the KB. Use <kbd>Ctrl</kbd>+<kbd>F</kbd> on the tags t
 | Area | Guide | What it covers | Tags |
 |---|---|---|---|
 | **Business Premium** | [Why Microsoft Business Premium](./Microsoft%20Business%20Premium/Why%20Microsoft%20Business%20Premium.pdf) | Sales/justification document making the case for the Business Premium suite | `business-premium` `licensing` `sales` |
+| **Copilot** | [Controlling Copilot Access to SharePoint Content](./Microsoft%20Copilot/Microsoft%20Copilot%20SharePoint%20Grounding%20Control%20Guide.md) | Restricted Content Discovery end to end: what RCD does and doesn't block, the four gaps to disclose, the SAM licensing gate (one *assigned* Copilot seat), site classification, CSV-driven apply with a log, validation, and rollback | `copilot` `sharepoint` `restricted-content-discovery` `sam` `governance` `powershell` |
 | **Defender** | [Display Name Spoofing Guide](./Microsoft%20Defender/Microsoft%20365%20Display%20Name%20Spoofing%20Guide.md) | Layered defense against external senders impersonating staff: DNS auth, anti-spoofing policies, external-sender tagging, user training | `defender` `email-security` `anti-phishing` `spoofing` |
 | **Defender** | [DMARC Rollout Guide](./Microsoft%20Defender/Microsoft%20365%20DMARC%20Rollout%20Guide.md) | Phased move from `p=none` to `p=reject` using `pct=` staging: alignment fixes, exit criteria per phase, subdomain strategy, change control, and rollback | `defender` `email-security` `dmarc` `spf` `dkim` `email-authentication` |
 | **Defender** | [SmartScreen & Network Protection](./Microsoft%20Defender/Microsoft%20Defender%20Smartscreen%20Network%20Protection.md) | SmartScreen vs Network Protection coverage, browser gaps, and the 3 Intune policies (EDR onboarding, ASR, web content filtering) | `defender` `mde` `network-protection` `smartscreen` `intune` |
