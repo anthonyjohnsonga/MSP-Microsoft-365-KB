@@ -1,6 +1,6 @@
 # MSP Microsoft 365 Knowledge Base
 
-[![Articles](https://img.shields.io/badge/articles-27-0078D4?style=flat-square)](#-article-index)
+[![Articles](https://img.shields.io/badge/articles-28-0078D4?style=flat-square)](#-article-index)
 [![Product Areas](https://img.shields.io/badge/product%20areas-12-5B2D90?style=flat-square)](#-article-index)
 [![Last Commit](https://img.shields.io/github/last-commit/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=00A4EF)](https://github.com/anthonyjohnsonga/MSP-Microsoft-365-KB/commits/main)
 [![License: MIT](https://img.shields.io/github/license/anthonyjohnsonga/MSP-Microsoft-365-KB?style=flat-square&color=green)](./LICENSE)
@@ -59,6 +59,7 @@ Every guide and script in the KB. Use <kbd>Ctrl</kbd>+<kbd>F</kbd> on the tags t
 | **Teams** | [External File Sharing (CsTeamsFilesPolicy)](./Microsoft%20Teams/Teams%20-%20External%20File%20Sharing%20via%20CsTeamsFilesPolicy.md) | Enable file attachments in external chats via `CsTeamsFilesPolicy` (PowerShell only) plus SharePoint external sharing | `teams` `external-sharing` `powershell` `policy` |
 | **Windows Server** | [Active Directory FSMO Recovery Guide](./Windows%20Server/Active%20Directory/Active%20Directory%20FSMO%20Recovery%20Guide.md) | Recovering a domain when the FSMO role holder is permanently lost with no backup: seizing all five roles, metadata cleanup, `_msdcs` delegation repair, PDC time source, and full `dcdiag`/`repadmin` validation | `windows-server` `active-directory` `fsmo` `dns` `disaster-recovery` `domain-controller` |
 | **PowerShell 7** | [Installing PowerShell 7](./PowerShell%207/Installing%20PowerShell%207.md) | Install PS7 on Windows/macOS, verify the install, add the ExchangeOnlineManagement module, and troubleshoot | `powershell` `installation` `setup` |
+| **PowerShell 7** | [PnP PowerShell App Registration & Connection](./PowerShell%207/PnP%20PowerShell%20Entra%20ID%20App%20Registration%20and%20Connection.md) | The per-tenant Entra ID app PnP has required since the shared app was retired: `Register-PnPEntraIDAppForInteractiveLogin`, default vs least-privilege permissions, admin consent, and `Connect-PnPOnline -Interactive -ClientId` | `powershell` `pnp` `sharepoint` `entra` `app-registration` `authentication` |
 
 ---
 
