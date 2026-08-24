@@ -80,6 +80,12 @@ Confirm whether this machine is **also on-prem AD-joined (hybrid)** or purely cl
 
 ---
 
+## Related
+
+- [Microsoft 365 Apps for Mac — Stale Tenant Activation Fix](../Microsoft%20365%20Apps/Microsoft%20365%20Apps%20for%20Mac%20Stale%20Tenant%20Activation%20Fix.md) — the Mac-side equivalent of a stale tenant pointer. Office keeps querying the old tenant for a license after cutover and drops to view-only; worth sweeping proactively on any Mac that was signed into the source tenant.
+
+---
+
 ## Sources
 
 - Microsoft Learn: [dsregcmd command](https://learn.microsoft.com/en-us/entra/identity/devices/troubleshoot-device-dsregcmd)
