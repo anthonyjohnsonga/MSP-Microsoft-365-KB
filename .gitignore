@@ -3,3 +3,6 @@ _temp/
 
 # Local Claude Code config (not part of the KB)
 .claude/
+
+# Local AI agent instructions (not part of the KB)
+AGENTS.md
