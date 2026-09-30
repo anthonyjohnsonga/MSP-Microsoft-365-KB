@@ -22,6 +22,12 @@ A reference guide covering the Properties Catalog feature in Microsoft Intune â€
 
 ---
 
+### [Windows Hello for Business Verification](./Windows%20Hello%20for%20Business%20Verification.pdf)
+
+One-page technician workflow for configuring Windows Hello for Business in Intune, checking provisioning prerequisites, validating a device with `dsregcmd` and User Device Registration events, and verifying fleet registration through the Entra authentication methods report or Microsoft Graph.
+
+---
+
 ### [Microsoft Windows 11 Hotpatch Notes](./Microsoft%20Windows%2011%20Hotpatch%20Notes.md)
 
 Reference notes covering Windows 11 Hotpatch â€” a feature that applies quality updates in-memory without requiring a reboot. Explains the baseline vs hotpatch update schedule (4 reboot months, 8 rebootless months per year), device prerequisites (Windows 11 24H2, VBS, HVCI), and the two Intune policies required to enable it: a Settings Catalog policy for Virtualization Based Security and a Windows Quality Update policy via Windows Update for Business.
