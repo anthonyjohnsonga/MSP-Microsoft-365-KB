@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>M365 mailbox and group types</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+@page{size:18.75in 13.75in;margin:0}
+html,body{width:1800px;height:1320px}
+body{margin:0;background:#F4F2EC;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+a{color:#1D4E89}a:hover{color:#123560}
+</style>
+</helmet>
+<div style="width: 1800px; height: 1320px; box-sizing: border-box; padding: 56px; background: #F4F2EC; color: #17191E; font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif; display: flex; flex-direction: column; gap: 28px">
+
+<!-- Header -->
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 15px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}">Microsoft 365 · Exchange Online · Entra ID</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 60px; line-height: 1.02; font-weight: 700; letter-spacing: -0.02em">Mailbox, shared mailbox, list, or group?</h1>
+<div style="font-size: 21px; line-height: 1.4; color: #3F444E; max-width: 1060px">Six objects that look alike in the address book but behave very differently. Choose by what it needs to do: hold mail, send mail, share a workspace, or grant access.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-end; flex-shrink: 0">
+<div style="display: flex; gap: 20px; font-size: 15px; font-weight: 500; color: #3F444E">
+<div style="display: flex; gap: 8px; align-items: center"><span style="width: 14px; height: 14px; border-radius: 3px; background: {{accent}}"></span>Mailboxes</div>
+<div style="display: flex; gap: 8px; align-items: center"><span style="width: 14px; height: 14px; border-radius: 3px; background: #2A2E36"></span>Groups</div>
+<div style="display: flex; gap: 8px; align-items: center"><span style="width: 14px; height: 14px; border-radius: 3px; background: #F3E3C7; border: 1px solid #C98A2E"></span>Admin note</div>
+</div>
+<div style="font-size: 14px; color: #555B66">Checked against Microsoft Learn, September 2026</div>
+</div>
+</div>
+
+<!-- Columns -->
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; flex-grow: 1">
+
+<!-- 1 User mailbox -->
+<div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E0DCD1; border-radius: 14px; overflow: hidden">
+<div style="background: {{accent}}; color: #FFFFFF; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 12px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"></path></svg>
+<div style="font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 27px; font-weight: 700; line-height: 1.1">User mailbox</div>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1; font-size: 15.5px; line-height: 1.42">
+<div style="min-height: 88px; color: #2A2E36">One person's own mailbox, calendar and contacts, tied to their own sign-in.</div>
+<div style="display: flex; flex-direction: column; gap: 9px; flex-grow: 1">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Key features</div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Personal inbox, calendar and contacts</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Signs in with their own account</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Can delegate Full Access or Send As to others</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Requires an Exchange Online license</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Examples</div>
+<div style="font-family: 'IBM Plex Sans', monospace; font-size: 14.5px; color: #2A2E36">john@company.com<br>sarah@company.com</div>
+</div>
+<div style="background: #FBF1E1; border: 1px solid #E9CF9F; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.4; color: #5E3200; min-height: 118px; box-sizing: border-box">Offboarding: convert before removing the license. Keep the account, block sign-in, and stay under 50 GB if unlicensed.</div>
+</div>
+</div>
+
+<!-- 2 Shared mailbox -->
+<div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E0DCD1; border-radius: 14px; overflow: hidden">
+<div style="background: {{accent}}; color: #FFFFFF; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 12px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2.5-8h13L21 13v6H3z"></path><path d="M3 13h5l1.5 2.5h5L16 13h5"></path></svg>
+<div style="font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 27px; font-weight: 700; line-height: 1.1">Shared mailbox</div>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1; font-size: 15.5px; line-height: 1.42">
+<div style="min-height: 88px; color: #2A2E36">A common inbox that several people inside the organization monitor and reply from.</div>
+<div style="display: flex; flex-direction: column; gap: 9px; flex-grow: 1">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Key features</div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Common inbox and shared calendar</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Full Access to open and manage items</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Send As or Send on Behalf to reply — Full Access alone can't send</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Delegate access is internal only; external senders can email it if allowed</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Examples</div>
+<div style="font-size: 14.5px; color: #2A2E36">support@company.com<br>info@company.com</div>
+</div>
+<div style="background: #FBF1E1; border: 1px solid #E9CF9F; border-radius: 10px; padding: 12px 14px; font-size: 13.5px; line-height: 1.35; color: #5E3200; min-height: 118px; box-sizing: border-box">Unlicensed up to 50 GB; delegates still need Exchange Online. Over 50 GB needs Plan 2. Archive or hold: Plan 2, or Plan 1 + Archiving. Block sign-in.</div>
+</div>
+</div>
+
+<!-- 3 Distribution list -->
+<div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E0DCD1; border-radius: 14px; overflow: hidden">
+<div style="background: #2A2E36; color: #FFFFFF; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 12px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="13" height="10" rx="1.5"></rect><polyline points="2.5,6.5 9,11 15.5,6.5"></polyline><path d="M18 8h3.5M18 12h3.5M18 16h3.5"></path><path d="M8 18.5h13.5"></path></svg>
+<div style="font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 27px; font-weight: 700; line-height: 1.1">Distribution list</div>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1; font-size: 15.5px; line-height: 1.42">
+<div style="min-height: 88px; color: #2A2E36">Sends one message to many recipients. Nothing is stored — there's no mailbox behind it.</div>
+<div style="display: flex; flex-direction: column; gap: 9px; flex-grow: 1">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Key features</div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Fans email out to every member</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Can accept external senders if enabled</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>No mailbox, calendar or files</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Dynamic version builds membership from user attributes</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Examples</div>
+<div style="font-size: 14.5px; color: #2A2E36">all-staff@company.com<br>sales@company.com</div>
+</div>
+<div style="background: #FBF1E1; border: 1px solid #E9CF9F; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.4; color: #5E3200; min-height: 118px; box-sizing: border-box">Microsoft 365 Groups can't be members of a distribution group. Only eligible cloud-managed, simple, non-nested groups can be upgraded.</div>
+</div>
+</div>
+
+<!-- 4 Microsoft 365 Group -->
+<div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E0DCD1; border-radius: 14px; overflow: hidden">
+<div style="background: #2A2E36; color: #FFFFFF; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 12px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"></rect><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"></rect><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"></rect><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"></rect></svg>
+<div style="font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 27px; font-weight: 700; line-height: 1.1">Microsoft 365 Group</div>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1; font-size: 15.5px; line-height: 1.42">
+<div style="min-height: 88px; color: #2A2E36">A shared workspace for a team: one membership list drives mail, files, calendar and planning.</div>
+<div style="display: flex; flex-direction: column; gap: 9px; flex-grow: 1">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Key features</div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Group mailbox and calendar</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>SharePoint site for shared files</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Planner, OneNote and Stream</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Guests and dynamic membership supported</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Examples</div>
+<div style="font-size: 14.5px; color: #2A2E36">project-team@company.com<br>marketing@company.com</div>
+</div>
+<div style="background: #FBF1E1; border: 1px solid #E9CF9F; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.4; color: #5E3200; min-height: 118px; box-sizing: border-box">Every team is backed by a Microsoft 365 Group. Create a new one with the team, or connect an eligible existing group.</div>
+</div>
+</div>
+
+<!-- 5 Security group -->
+<div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E0DCD1; border-radius: 14px; overflow: hidden">
+<div style="background: #2A2E36; color: #FFFFFF; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 12px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><polyline points="8.5,12 11,14.5 15.5,9.5"></polyline></svg>
+<div style="font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 27px; font-weight: 700; line-height: 1.1">Security group</div>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1; font-size: 15.5px; line-height: 1.42">
+<div style="min-height: 88px; color: #2A2E36">Controls who gets access, licenses and policies. It has no email address.</div>
+<div style="display: flex; flex-direction: column; gap: 9px; flex-grow: 1">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Key features</div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Access to SharePoint, apps and resources</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Group-based licensing, Conditional Access and Intune targeting</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Dynamic membership in Entra ID</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Can hold users, devices, service principals and other groups</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Examples</div>
+<div style="font-size: 14.5px; color: #2A2E36">SG-M365-Admins<br>SG-Intune-Pilot</div>
+</div>
+<div style="background: #FBF1E1; border: 1px solid #E9CF9F; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.4; color: #5E3200; min-height: 118px; box-sizing: border-box">A cloud security group can't be mail-enabled later. If it needs email, create a mail-enabled security group instead.</div>
+</div>
+</div>
+
+<!-- 6 Mail-enabled security group -->
+<div style="display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E0DCD1; border-radius: 14px; overflow: hidden">
+<div style="background: #2A2E36; color: #FFFFFF; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 12px">
+<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><rect x="7.5" y="9" width="9" height="6.5" rx="1"></rect><polyline points="7.5,10 12,13 16.5,10"></polyline></svg>
+<div style="font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 27px; font-weight: 700; line-height: 1.1">Mail-enabled security group</div>
+</div>
+<div style="padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1; font-size: 15.5px; line-height: 1.42">
+<div style="min-height: 88px; color: #2A2E36">Grants access to resources and also receives email for the same members.</div>
+<div style="display: flex; flex-direction: column; gap: 9px; flex-grow: 1">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Key features</div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Access control plus an email address</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Created and managed in Exchange</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>Read-only in Entra ID and Microsoft Graph</span></div>
+<div style="display: flex; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#2A2E36" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px"><polyline points="3,8.5 6.5,12 13,4.5"></polyline></svg><span>No dynamic membership</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #555B66">Examples</div>
+<div style="font-size: 14.5px; color: #2A2E36">finance-team@company.com<br>hr-staff@company.com</div>
+</div>
+<div style="background: #FBF1E1; border: 1px solid #E9CF9F; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.4; color: #5E3200; min-height: 118px; box-sizing: border-box">Use only when you truly need both. For licensing and Intune, a plain security group is easier to manage.</div>
+</div>
+</div>
+
+</div>
+
+<!-- Quick rule -->
+<div style="display: flex; gap: 20px; align-items: center; background: #FFFFFF; border: 1px solid #E0DCD1; border-radius: 14px; padding: 18px 22px">
+<div style="font-family: 'Bricolage Grotesque', Georgia, serif; font-size: 26px; font-weight: 700; flex-shrink: 0; width: 150px">Quick rule</div>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; flex-grow: 1">
+<div style="background: #E6EDF6; border-radius: 10px; padding: 12px 14px; font-size: 15px; line-height: 1.35"><span style="color: #3F444E">One person</span><br><strong style="color: {{accent}}">→ User mailbox</strong></div>
+<div style="background: #E6EDF6; border-radius: 10px; padding: 12px 14px; font-size: 15px; line-height: 1.35"><span style="color: #3F444E">One team, one inbox</span><br><strong style="color: {{accent}}">→ Shared mailbox</strong></div>
+<div style="background: #ECEBE7; border-radius: 10px; padding: 12px 14px; font-size: 15px; line-height: 1.35"><span style="color: #3F444E">One message, many people</span><br><strong style="color: #17191E">→ Distribution list</strong></div>
+<div style="background: #ECEBE7; border-radius: 10px; padding: 12px 14px; font-size: 15px; line-height: 1.35"><span style="color: #3F444E">Team collaboration</span><br><strong style="color: #17191E">→ Microsoft 365 Group</strong></div>
+<div style="background: #ECEBE7; border-radius: 10px; padding: 12px 14px; font-size: 15px; line-height: 1.35"><span style="color: #3F444E">Access, licenses, policy</span><br><strong style="color: #17191E">→ Security group</strong></div>
+<div style="background: #ECEBE7; border-radius: 10px; padding: 12px 14px; font-size: 15px; line-height: 1.35"><span style="color: #3F444E">Access plus email</span><br><strong style="color: #17191E">→ Mail-enabled SG</strong></div>
+</div>
+</div>
+
+<!-- Footer -->
+<div style="display: flex; justify-content: space-between; gap: 32px; font-size: 13.5px; color: #555B66">
+<div>Sources: Microsoft Learn — <a href="https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups">Compare group types</a> · <a href="https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes">About shared mailboxes</a> · <a href="https://learn.microsoft.com/en-us/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox">Convert a user mailbox</a> · <a href="https://learn.microsoft.com/en-us/graph/api/resources/groups-overview">Microsoft Graph groups</a> · <a href="https://learn.microsoft.com/en-us/exchange/troubleshoot/groups-and-distribution-lists/cannot-upgrade-distribution-lists-to-office-365-groups">Distribution-group upgrades</a></div>
+<div style="flex-shrink: 0">Licensing details change; confirm current limits before quoting.</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1D4E89","options":["#1D4E89","#0F5E5A","#5B3E96","#8A3B12"]},"$preview":{"width":1800,"height":1320}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#1D4E89' };
+  }
+}
+</script>
+</body>
+</html>

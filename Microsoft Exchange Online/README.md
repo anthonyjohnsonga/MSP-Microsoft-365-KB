@@ -10,6 +10,12 @@ A comprehensive reference guide covering the full scope of day-to-day Exchange O
 
 ---
 
+### [Microsoft 365 Recipient and Group Types](./Microsoft%20365%20Recipient%20and%20Group%20Types.pdf)
+
+A one-page technician quick reference for choosing among user mailboxes, shared mailboxes, distribution groups, Microsoft 365 Groups, security groups, and mail-enabled security groups. It compares storage, sending, collaboration, access-control, dynamic-membership, licensing, external-access, and management behavior, with concise operational cautions and linked Microsoft Learn sources.
+
+---
+
 ### [Microsoft Exchange Online Mailbox Archiving](./Microsoft%20Exchange%20Online%20Mailbox%20Archiving.md)
 
 A focused deep-dive into Exchange Online mailbox archiving, covering archive types (Online Archive and Auto-Expanding Archive), how to enable or disable archives for user and shared mailboxes via the EAC and PowerShell, storage limits by license, retention policies and the Managed Folder Assistant, retention hold vs. litigation hold, PST bulk import, and how users access their archive in Outlook Desktop, OWA, and mobile. Also includes a dedicated section on managing the archive programmatically via the Microsoft Graph API, with PowerShell examples for connecting to Graph, retrieving archive folder IDs, listing messages, and permanently deleting items.
