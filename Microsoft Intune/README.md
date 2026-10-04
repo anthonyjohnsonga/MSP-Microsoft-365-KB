@@ -4,6 +4,20 @@ This folder contains reference guides for managing devices, policies, and invent
 
 ---
 
+### [Intune Faster Delivery (PDF)](./Intune%20Faster%20Delivery.pdf)
+
+Preserved one-page visual reference comparing policy, remote-action, sync, Win32 app, compliance, and inventory responsiveness during service releases 2607-2609. Distinguishes Microsoft-documented changes from MVP observations. Read the [detailed fact check](./Intune%20Faster%20Delivery%20Fact%20Check.md) for qualifications: observed timings are not delivery guarantees, and sync processing does not override workload execution rules.
+
+### [Intune Faster Delivery Fact Check](./Intune%20Faster%20Delivery%20Fact%20Check.md)
+
+Claim-by-claim review of the PDF against Microsoft documentation and firsthand research by Rudy Ooms, including historical Sync differences, notification versus execution, custom compliance cadence, and platform-script rerun behavior.
+
+### [Intune Delivery Troubleshooting Companion](./Intune%20Delivery%20Troubleshooting%20Companion.md)
+
+Technician workflow for targeting, sync status, IME health, WNS and regional endpoint connectivity, client logs, workload-specific delays, controlled recovery, verification, rollback, and private escalation evidence.
+
+---
+
 ### [Application Deployment Runbooks](./Apps/README.md)
 
 Version-specific Win32 application packaging and deployment guides, including installer validation, detection rules, assignments, supersedence, rollback, and troubleshooting.
