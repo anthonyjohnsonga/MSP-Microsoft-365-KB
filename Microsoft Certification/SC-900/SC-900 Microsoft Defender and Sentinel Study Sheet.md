@@ -12,6 +12,8 @@ Use this sheet for product-selection practice, then check the official SC-900 sk
 
 **MSP note:** Practice in an isolated lab with synthetic data. Verify the customer tenant and delegated role before investigating live incidents. This study sheet makes no configuration changes and needs no rollback; any lab automation that disables accounts or isolates devices needs its own approval and recovery plan.
 
+**Companion:** [SC-900 Microsoft Entra Identity and Device Study Sheet](./SC-900%20Microsoft%20Entra%20Identity%20and%20Device%20Study%20Sheet.md).
+
 ## Overview
 
 ### How to Think About These Quickly
