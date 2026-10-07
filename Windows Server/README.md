@@ -20,6 +20,10 @@ First in the paired workflow: assess and deploy role-aware GPOs for upstream NTP
 
 Use after the baseline for time validation during DC additions, PDC transfers, and replacements. Covers pre-checks, policy convergence, dependent appliances, demotion gates, rollback, and emergency recovery handoff.
 
+### [Active Directory PDC Windows Time Repair Runbook](./Active%20Directory/Active%20Directory%20PDC%20Windows%20Time%20Repair%20Runbook.md)
+
+Repair companion for an incorrect forest-root PDC time source. Covers Hyper-V integration, policy versus local configuration, approved upstream NTP, downstream verification, and rollback.
+
 ### [Active Directory FSMO Recovery Guide](./Active%20Directory/Active%20Directory%20FSMO%20Recovery%20Guide.md)
 
 An 11-phase runbook for recovering a domain when a domain controller holding FSMO roles is permanently lost and no usable backup exists. Covers isolating the dead DC so it can never rejoin, verifying SYSVOL/NETLOGON and replication health on the survivors before touching anything, temporarily elevating to Enterprise/Schema Admins, and seizing all five roles with `Move-ADDirectoryServerOperationMasterRole -Force`. Continues through metadata cleanup in ADUC and Sites and Services, stale DNS record removal, repairing a malformed `_msdcs` delegation (the "missing glue A record" error) with `Add-DnsServerZoneDelegation`, correcting DNS client settings and every downstream system still pointing at the dead IP, and re-establishing the time hierarchy on the new PDC Emulator against external NTP. Ends with a full `dcdiag`/`repadmin` validation pass, removal of the temporary privileged memberships, and guidance on building a clean replacement DC. Uses a fictional three-DC `example.local` environment throughout.
