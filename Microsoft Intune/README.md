@@ -4,6 +4,12 @@ This folder contains reference guides for managing devices, policies, and invent
 
 ---
 
+### [Windows Settings Backup and Restore Runbook](./Windows%20Settings%20Backup%20and%20Restore%20Runbook.md)
+
+Configure tenant enrollment restore and device backup policies, diagnose baseline and Conditional Access conflicts, verify a pilot with Graph and device checks, and manage rollback and offboarding.
+
+---
+
 ### [Intune Faster Delivery (PDF)](./Intune%20Faster%20Delivery.pdf)
 
 Preserved one-page visual reference comparing policy, remote-action, sync, Win32 app, compliance, and inventory responsiveness during service releases 2607-2609. Distinguishes Microsoft-documented changes from MVP observations. Read the [detailed fact check](./Intune%20Faster%20Delivery%20Fact%20Check.md) for qualifications: observed timings are not delivery guarantees, and sync processing does not override workload execution rules.
