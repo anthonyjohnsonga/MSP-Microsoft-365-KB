@@ -16,19 +16,12 @@ Write-Host "Role ID obtained: $roletoassign"
 # Define the parameters for the new role assignment
 $params = @{
     "@odata.type" = "#microsoft.graph.unifiedRoleAssignment"
-    RoleDefinitionId = "$roletoassign"
-    PrincipalId = "$userid"
-    DirectoryScopeId = "/"
+    roleDefinitionId = "$roletoassign"
+    principalId = "$userid"
+    directoryScopeId = "/"
 }
 
-$json = @'
-{
-"@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-"roleDefinitionId": "$roletoassign",
-"principalId": "$userid",
-"directoryScopeId": "/"
-}
-'@
+$json = $params | ConvertTo-Json
 
 $posturi = "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments"
 
