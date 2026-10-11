@@ -14,6 +14,16 @@ A visual summary of the September 2026 feature update, enablement-package delive
 
 Before deployment, verify device eligibility, licensing and policy requirements for the features you plan to use, current safeguard holds, and release-health notices. Validate in a pilot ring for each customer tenant and confirm backups and recovery options before broad rollout.
 
+---
+
+### [Windows AppSwitched Registry Investigation Guide](./Windows%20AppSwitched%20Registry%20Investigation%20Guide.md)
+
+**Applies to:** Windows 10 version 1903 and later; Windows 11<br>
+**Scope:** Inspect per-user taskbar counters and correlate account activity during endpoint investigations<br>
+**Last Updated:** October 2026
+
+Account and hive identification, current-user and offline inspection, checked hive loading and cleanup, interpretation limits, verification, and troubleshooting. Includes MSP session-context and evidence-preservation guidance.
+
 ## Sources
 
 - [What's new in Windows 11, version 26H2](https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2)
