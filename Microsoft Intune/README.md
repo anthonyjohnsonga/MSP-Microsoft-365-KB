@@ -4,6 +4,12 @@ This folder contains reference guides for managing devices, policies, and invent
 
 ---
 
+### [Intune Enrollment Methods Guide](./Intune%20Enrollment%20Methods%20Guide.md)
+
+Choose enrollment methods by platform and ownership with two inline infographics, licensing and connector prerequisites, Windows scope precedence, method-specific device limits, DEM caveats, pilot verification, and rollback guidance.
+
+---
+
 ### [Windows Settings Backup and Restore Runbook](./Windows%20Settings%20Backup%20and%20Restore%20Runbook.md)
 
 Configure tenant enrollment restore and device backup policies, diagnose baseline and Conditional Access conflicts, verify a pilot with Graph and device checks, and manage rollback and offboarding.
