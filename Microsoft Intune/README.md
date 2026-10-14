@@ -48,6 +48,12 @@ A reference guide covering the Properties Catalog feature in Microsoft Intune â€
 
 ---
 
+### [Windows Hello for Business Cloud Kerberos Trust Deployment Guide](./Windows%20Hello%20for%20Business%20Cloud%20Kerberos%20Trust%20Deployment%20Guide.md)
+
+Deploy cloud Kerberos trust through Intune for synchronized AD users on Entra joined or hybrid joined devices. Covers infrastructure and licensing prerequisites, policy conflicts, pilot deployment, partial and full Kerberos ticket verification, trust-model migration, troubleshooting, and rollback. Fact checked against Microsoft Learn with Microsoft MVP corroboration.
+
+---
+
 ### [Windows Hello for Business Verification](./Windows%20Hello%20for%20Business%20Verification.pdf)
 
 One-page technician workflow for configuring Windows Hello for Business in Intune, checking provisioning prerequisites, validating a device with `dsregcmd` and User Device Registration events, and verifying fleet registration through the Entra authentication methods report or Microsoft Graph.
