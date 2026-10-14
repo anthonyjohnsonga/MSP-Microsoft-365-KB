@@ -27,6 +27,8 @@ See [deployment planning](https://learn.microsoft.com/en-us/windows/security/ide
 
 ## 1. Validate Microsoft Entra Kerberos
 
+For the complete server-side setup and verification procedure, follow the [Microsoft Entra Kerberos Server Deployment Guide](../Microsoft%20Entra/Microsoft%20Entra%20Kerberos%20Server%20Deployment%20Guide.md), then return here for Intune policy deployment.
+
 1. Confirm an Entra Kerberos server object exists for each AD domain containing pilot users. The `AzureADKerberos` computer resembles an RODC but has no physical server.
 2. If absent, follow [Microsoft's server setup procedure](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises). Use `AzureADHybridAuthenticationManagement` and `Set-AzureADKerberosServer`; verify with `Get-AzureADKerberosServer`. Creation requires the documented RPC DLL dependency, typically available on the Entra Connect server.
 3. Arrange AD Domain Admin and Enterprise Admin credentials and an Entra **Hybrid Identity Administrator** account for infrastructure setup. These permissions are separate from Intune policy permissions.

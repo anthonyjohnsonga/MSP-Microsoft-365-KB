@@ -4,6 +4,12 @@ This folder contains reference guides for managing identity, access, and securit
 
 ---
 
+### [Microsoft Entra Kerberos Server Deployment Guide](./Microsoft%20Entra%20Kerberos%20Server%20Deployment%20Guide.md)
+
+Create and verify Entra Kerberos server objects for on-premises passwordless SSO, with credential and interactive authentication options, AD/cloud property checks, pilot ticket validation, GPO template guidance, maintenance, and rollback. Companion to the [Intune cloud trust deployment guide](../Microsoft%20Intune/Windows%20Hello%20for%20Business%20Cloud%20Kerberos%20Trust%20Deployment%20Guide.md).
+
+---
+
 ### [Set Authorization Policy for Guest User Access](./Set%20Authorization%20Policy%20for%20Guest%20User%20Access.md)
 
 A reference guide covering how to configure the tenant-wide guest user access authorization policy in Microsoft Entra ID. The guide explains the three available guest permission levels (User/Member, Guest User, and Restricted Guest User) and their corresponding GUIDs, outlines why organizations adjust these settings to balance security and external collaboration, and provides step-by-step instructions for applying the policy both through the Microsoft Entra Admin Center GUI and via a PATCH request to the Microsoft Graph API. Required admin roles for each configuration option are also documented.
