@@ -19,3 +19,21 @@ A layered defense guide for protecting Microsoft 365 Business Premium tenants ag
 ### [Microsoft 365 DMARC Rollout Guide](./Microsoft%20365%20DMARC%20Rollout%20Guide.md)
 
 A phased rollout guide for moving a domain's DMARC policy from monitoring (`p=none`) through `p=quarantine` to full enforcement (`p=reject`) without breaking legitimate mail flow. Explains DMARC alignment (SPF/DKIM, relaxed vs. strict), the `pct=` staged-enforcement tag and its common misunderstandings, and a phase-by-phase timeline with exit criteria for each stage. Includes a pre-change checklist and sender inventory, fixes for common alignment failures (third-party vendors, website forms, copiers, forwarding, SPF lookup limits), subdomain and non-sending-domain strategy, Microsoft 365-specific behavior (DKIM enablement, high-risk delivery pool, no forensic reports), a change control template with rollback plan, DNS testing commands, customer-facing language, and an MSP decision matrix.
+
+---
+
+## Windows 11 Antivirus and Endpoint Onboarding
+
+Defender Antivirus is built into Windows 11. Intune antivirus policy configures the engine; onboarding is a separate operation. AMRunningMode describes antivirus state and does not prove onboarding or sensor health.
+
+### [Microsoft Defender Antivirus Running Modes](./Microsoft%20Defender%20Antivirus%20Running%20Modes.md)
+
+Interpret AMRunningMode and Windows 11 protection capabilities.
+
+### [Microsoft Defender for Endpoint Onboarding via Intune](./Microsoft%20Defender%20for%20Endpoint%20Onboarding%20via%20Intune.md)
+
+Onboard Intune-managed Windows 11 devices and verify sensor reporting.
+
+### [Microsoft Defender Antivirus Passive Mode Troubleshooting](./Microsoft%20Defender%20Antivirus%20Passive%20Mode%20Troubleshooting.md)
+
+Diagnose Windows 11 passive mode and third-party antivirus coexistence.
