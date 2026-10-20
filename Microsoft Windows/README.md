@@ -44,6 +44,16 @@ Windows taskbar settings and a targeted registry workaround using `ForegroundFla
 
 ---
 
+### [Install Windows Updates with PowerShell](./Install%20Windows%20Updates%20with%20PowerShell.md)
+
+**Applies to:** Windows 11; Windows 10 under an applicable support arrangement; Windows PowerShell 5.1<br>
+**Scope:** Install approved updates locally with PSWindowsUpdate<br>
+**Last Updated:** October 2026
+
+Module preparation, session-scoped execution policy, update-source selection, review before installation, explicit restart handling, verification, recovery, and managed-update caveats.
+
+---
+
 ## Sources
 
 - [What's new in Windows 11, version 26H2](https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2)
