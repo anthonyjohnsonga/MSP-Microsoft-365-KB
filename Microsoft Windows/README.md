@@ -24,6 +24,16 @@ Before deployment, verify device eligibility, licensing and policy requirements 
 
 Account and hive identification, current-user and offline inspection, checked hive loading and cleanup, interpretation limits, verification, and troubleshooting. Includes MSP session-context and evidence-preservation guidance.
 
+### [Windows Hello PIN Reset Guide](./Windows%20Hello%20PIN%20Reset%20Guide.md)
+
+**Applies to:** Windows 11; Windows Hello and Windows Hello for Business<br>
+**Scope:** Reset PIN enrollment and recover with manual NGC-folder removal when needed<br>
+**Last Updated:** October 2026
+
+Built-in PIN reset, affected-user container deletion, a field-tested NGC recovery fallback, credential and passkey impact, reprovisioning, and verification. Includes shared-device precautions and recovery limitations.
+
+---
+
 ## Sources
 
 - [What's new in Windows 11, version 26H2](https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2)
