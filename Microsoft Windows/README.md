@@ -54,6 +54,17 @@ Module preparation, session-scoped execution policy, update-source selection, re
 
 ---
 
+### Windows Wireless Profiles Series
+
+**Applies to:** Windows 11; Windows 10 under an applicable support arrangement<br>
+**Scope:** Identify saved wireless profiles, then inspect an authorized profile's saved shared key<br>
+**Last Updated:** October 2026
+
+1. [Part 1 - List Saved Profiles](./Windows%20Wireless%20Profiles%20-%20Part%201%20-%20List%20Saved%20Profiles.md) — List profiles, identify the correct interface and profile name, and review authentication settings.
+2. [Part 2 - View a Saved Wi-Fi Password](./Windows%20Wireless%20Profiles%20-%20Part%202%20-%20View%20a%20Saved%20Wi-Fi%20Password.md) — Inspect one saved shared key with elevation, credential handling, and enterprise authentication limitations.
+
+---
+
 ## Sources
 
 - [What's new in Windows 11, version 26H2](https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2)
