@@ -34,6 +34,16 @@ Built-in PIN reset, affected-user container deletion, a field-tested NGC recover
 
 ---
 
+### [Windows Taskbar Flashing and Foreground Behavior Guide](./Windows%20Taskbar%20Flashing%20and%20Foreground%20Behavior%20Guide.md)
+
+**Applies to:** Windows 11; Windows 10 under an applicable support arrangement<br>
+**Scope:** Adjust per-user taskbar attention flashing and foreground lock behavior<br>
+**Last Updated:** October 2026
+
+Windows taskbar settings and a targeted registry workaround using `ForegroundFlashCount` and `ForegroundLockTimeout`. Includes symptom identification, original-value backup, focus-impact testing, rollback, and MSP user-context guidance.
+
+---
+
 ## Sources
 
 - [What's new in Windows 11, version 26H2](https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2)
