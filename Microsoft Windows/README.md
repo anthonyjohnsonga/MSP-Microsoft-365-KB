@@ -65,6 +65,16 @@ Module preparation, session-scoped execution policy, update-source selection, re
 
 ---
 
+### [Repair a Workstation Domain Trust Relationship](./Repair%20a%20Workstation%20Domain%20Trust%20Relationship.md)
+
+**Applies to:** AD domain-joined Windows workstations; Windows PowerShell 5.1<br>
+**Scope:** Diagnose and repair a workstation secure channel without first removing and rejoining the domain<br>
+**Last Updated:** October 2026
+
+Local administrator access, delegated domain credentials, DNS/DC connectivity checks, test-before-repair flow, alternative machine-password reset, restart, and verification. Excludes domain controllers and Entra-only devices.
+
+---
+
 ## Sources
 
 - [What's new in Windows 11, version 26H2](https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2)
