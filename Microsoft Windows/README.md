@@ -75,6 +75,16 @@ Local administrator access, delegated domain credentials, DNS/DC connectivity ch
 
 ---
 
+### [Check BitLocker Encryption and Protection Status](./Check%20BitLocker%20Encryption%20and%20Protection%20Status.md)
+
+**Applies to:** Windows 11; Windows 10 under an applicable support arrangement<br>
+**Scope:** Inspect local volume encryption and protection status with manage-bde<br>
+**Last Updated:** October 2026
+
+All-drive and single-drive checks, conversion progress versus active protection, lock state, encryption method, verification, and troubleshooting. Explains why local status does not prove recovery-key escrow or full compliance.
+
+---
+
 ## Sources
 
 - [What's new in Windows 11, version 26H2](https://learn.microsoft.com/en-us/windows/whats-new/whats-new-windows-11-version-26h2)
