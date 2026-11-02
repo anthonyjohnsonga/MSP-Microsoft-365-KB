@@ -133,7 +133,7 @@ During MSP handover, document the replacement policy owner and verify the new co
 
 ## 8. Corrections to the Supplied Infographic
 
-The [original May 24, 2025 infographic](./images/Windows%20Patch%20Management%20Original%20Infographic.jpg), credited in the image to CloudEngineerHub, is retained as historical source material. It contains outdated or imprecise guidance and is not a deployment checklist.
+The supplied May 24, 2025 infographic, credited to CloudEngineerHub, contains outdated or imprecise guidance. The corrections below are retained for reference; the original image is not included in this repository.
 
 | Original claim or implication | Reviewed conclusion |
 |---|---|
