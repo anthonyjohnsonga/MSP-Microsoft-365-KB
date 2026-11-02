@@ -4,6 +4,12 @@ This folder contains reference guides for managing devices, policies, and invent
 
 ---
 
+### [Microsoft Intune Windows Patch Management Guide](./Microsoft%20Intune%20Windows%20Patch%20Management%20Guide.md)
+
+Plan and verify Windows update rings, feature targets, quality updates, and driver approvals with licensing, staged deployment, troubleshooting, rollback, and a sourced correction table for the original infographic. Reviewed against Microsoft Learn and Microsoft MVP guidance.
+
+---
+
 ### [Intune Enrollment Methods Guide](./Intune%20Enrollment%20Methods%20Guide.md)
 
 Choose enrollment methods by platform and ownership with two inline infographics, licensing and connector prerequisites, Windows scope precedence, method-specific device limits, DEM caveats, pilot verification, and rollback guidance.
