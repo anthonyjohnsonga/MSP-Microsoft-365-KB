@@ -10,6 +10,12 @@ A step-by-step guide for building a monitor-only DLP policy that alerts administ
 
 ---
 
+### [Microsoft Copilot Prompt Investigation Guide](./Microsoft%20Copilot%20Prompt%20Investigation%20Guide.md)
+
+Locate stored Copilot prompts with eDiscovery, inspect current DSPM AI activity, and review Communication Compliance and Insider Risk Management policy matches. Includes minimum licensing paths for Business Premium, Purview Suite and combined Defender/Purview add-ons, separate Copilot and usage-billing requirements, workflow-specific permissions, browser prerequisites, screenshots, pilot verification, troubleshooting, and cleanup.
+
+---
+
 ## Related guides in other folders
 
 - [Microsoft Exchange Online Email Encryption Setup Guide](../Microsoft%20Exchange%20Online/Microsoft%20Exchange%20Online%20Email%20Encryption%20Setup%20Guide.md) — Purview Message Encryption is enabled and troubleshot from Exchange Online PowerShell, so that guide lives in the Exchange Online folder.

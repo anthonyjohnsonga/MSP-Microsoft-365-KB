@@ -14,5 +14,7 @@ The licensing gate gets its own section because it forces the project sequence: 
 
 ## Related guides in other folders
 
+- [Microsoft Copilot Prompt Investigation Guide](../Microsoft%20Purview/Microsoft%20Copilot%20Prompt%20Investigation%20Guide.md) — find stored prompts and AI activity in Purview, with Business Premium licensing and add-on requirements.
+
 - [Microsoft Purview DLP — External Sharing Alert](../Microsoft%20Purview/Microsoft%20Purview%20DLP%20External%20Sharing%20Alert%20Policy%20Creation.md) — sensitivity labels and Purview DLP are the durable alternative to RCD for genuinely sensitive content.
 - [Microsoft OneDrive Sync Troubleshooting](../Microsoft%20OneDrive/Microsoft%20OneDrive%20Sync%20Troubleshooting.md) — RCD does not apply to OneDrive, which remains a Copilot grounding source.
