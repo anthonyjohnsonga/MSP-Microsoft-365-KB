@@ -4,6 +4,12 @@ This folder contains reference guides for managing identity, access, and securit
 
 ---
 
+### [Microsoft Entra Dsregcmd Status Troubleshooting Guide](./Microsoft%20Entra%20Dsregcmd%20Status%20Troubleshooting%20Guide.md)
+
+Interpret device join, user SSO, and MDM enrollment evidence with collection-context guidance, corrected error codes, diagnostic steps, and a section-by-section infographic fact check against Microsoft Learn and Microsoft MVP case studies.
+
+---
+
 ### [Microsoft Entra Kerberos Server Deployment Guide](./Microsoft%20Entra%20Kerberos%20Server%20Deployment%20Guide.md)
 
 Create and verify Entra Kerberos server objects for on-premises passwordless SSO, with credential and interactive authentication options, AD/cloud property checks, pilot ticket validation, GPO template guidance, maintenance, and rollback. Companion to the [Intune cloud trust deployment guide](../Microsoft%20Intune/Windows%20Hello%20for%20Business%20Cloud%20Kerberos%20Trust%20Deployment%20Guide.md).
