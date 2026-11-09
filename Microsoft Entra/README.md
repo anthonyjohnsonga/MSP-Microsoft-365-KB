@@ -43,3 +43,9 @@ A step-by-step runbook for moving a single Entra ID (Azure AD) joined Windows de
 ### [Microsoft Entra - Passkey (FIDO2) Policy and Registration Campaign](./Microsoft%20Entra%20-%20Passkey%20(FIDO2)%20Policy%20and%20Registration%20Campaign.md)
 
 A technical guide for configuring the Passkey (FIDO2) authentication method using passkey profiles and driving adoption with the Authentication methods registration campaign, with both portal and Microsoft Graph methods for every step. Covers licensing and prerequisites, the difference between device-bound and synced passkeys (attestation, AAGUID restrictions, recovery, and provider platform support), the two-profile pattern that pairs an all-users Default profile with a hardened device-bound-only admin profile, and the full registration campaign configuration including State values, snooze behavior, and the per-device/per-browser nudge evaluation. Calls out the Microsoft-managed gotchas (silent nudge suppression on hardened admin profiles, moving-target targeting), the March 2026 synced-passkey migration side effect, optional Conditional Access authentication-strength enforcement, a recommended client rollout sequence, verification via Graph, and a troubleshooting table. Verified against Microsoft Learn on 2026-07-27.
+
+---
+
+## Related guides in other folders
+
+- [Shadow AI Discovery Guide](../Microsoft%20Purview/Shadow%20AI%20Discovery%20Guide.md) — compare Defender, Entra Internet Access, and Purview discovery with Business Premium add-on licensing and coverage limits.

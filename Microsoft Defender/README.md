@@ -37,3 +37,9 @@ Onboard Intune-managed Windows 11 devices and verify sensor reporting.
 ### [Microsoft Defender Antivirus Passive Mode Troubleshooting](./Microsoft%20Defender%20Antivirus%20Passive%20Mode%20Troubleshooting.md)
 
 Diagnose Windows 11 passive mode and third-party antivirus coexistence.
+
+---
+
+## Related guides in other folders
+
+- [Shadow AI Discovery Guide](../Microsoft%20Purview/Shadow%20AI%20Discovery%20Guide.md) — compare Defender, Entra Internet Access, and Purview discovery with Business Premium add-on licensing and coverage limits.

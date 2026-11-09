@@ -16,6 +16,12 @@ Locate stored Copilot prompts with eDiscovery, inspect current DSPM AI activity,
 
 ---
 
+### [Shadow AI Discovery Guide](./Shadow%20AI%20Discovery%20Guide.md)
+
+Compare Defender for Cloud Apps, Entra Internet Access, and Purview AI activity discovery. Covers Business Premium's limited discovery entitlement, minimum add-on licensing, Defender for Business integration, traffic and content capture limits, pilot verification, enforcement prerequisites, troubleshooting, and rollback.
+
+---
+
 ## Related guides in other folders
 
 - [Microsoft Exchange Online Email Encryption Setup Guide](../Microsoft%20Exchange%20Online/Microsoft%20Exchange%20Online%20Email%20Encryption%20Setup%20Guide.md) — Purview Message Encryption is enabled and troubleshot from Exchange Online PowerShell, so that guide lives in the Exchange Online folder.
