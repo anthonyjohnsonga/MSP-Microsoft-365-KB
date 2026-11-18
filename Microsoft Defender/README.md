@@ -16,6 +16,12 @@ A query reference for finding Network Protection blocks by domain and device, in
 
 ---
 
+### [Microsoft Defender Web Content Filtering Troubleshooting Guide](./Microsoft%20Defender%20Web%20Content%20Filtering%20Troubleshooting%20Guide.md)
+
+Troubleshooting reference for website blocks in Edge and Chrome: local events, blocking-feature identification, approved Allow indicators, propagation, scope limitations, and exception rollback. Links to the companion KQL hunting reference.
+
+---
+
 ### [Microsoft 365 Display Name Spoofing Guide](./Microsoft%20365%20Display%20Name%20Spoofing%20Guide.md)
 
 A layered defense guide for protecting Microsoft 365 Business Premium tenants against display name spoofing — a phishing technique where attackers impersonate internal staff using matching display names from external domains. Covers 5 defense layers: email authentication (SPF/DKIM/DMARC), external sender callouts in EAC, anti-phishing user impersonation protection in Defender for Office 365 P1, mail flow rules targeting executive display names, and user awareness training via Attack Simulator. Includes an implementation checklist with priority and user impact ratings, and monitoring guidance for quarantine review, spoof intelligence, and DMARC reporting.
