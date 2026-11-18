@@ -10,6 +10,12 @@ An MSP reference guide explaining the difference between Microsoft Defender Smar
 
 ---
 
+### [Microsoft Defender Network Protection KQL Hunting Guide](./Microsoft%20Defender%20Network%20Protection%20KQL%20Hunting%20Guide.md)
+
+A query reference for finding Network Protection blocks by domain and device, interpreting response fields, comparing fresh tests with historical events, and correlating local Windows events. Includes query explanations, access requirements, and coverage limits.
+
+---
+
 ### [Microsoft 365 Display Name Spoofing Guide](./Microsoft%20365%20Display%20Name%20Spoofing%20Guide.md)
 
 A layered defense guide for protecting Microsoft 365 Business Premium tenants against display name spoofing — a phishing technique where attackers impersonate internal staff using matching display names from external domains. Covers 5 defense layers: email authentication (SPF/DKIM/DMARC), external sender callouts in EAC, anti-phishing user impersonation protection in Defender for Office 365 P1, mail flow rules targeting executive display names, and user awareness training via Attack Simulator. Includes an implementation checklist with priority and user impact ratings, and monitoring guidance for quarantine review, spoof intelligence, and DMARC reporting.
